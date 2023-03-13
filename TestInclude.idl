@@ -1,0 +1,6 @@
+#ifndef TESTINCLUDE
+#define TESTINCLUDE
+
+typedef string MACHINEID;
+
+#endif // TESTINCLUDE
