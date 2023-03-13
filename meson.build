@@ -24,6 +24,14 @@ test_idl = custom_target(
     ],
 )
 
-exe = executable('eprosima_test', 'eprosima_test.cpp', test_idl, install: true)
+fastdds = dependency('fastrtps', required: false)
+
+exe = executable(
+    'eprosima_test',
+    'eprosima_test.cpp',
+    test_idl,
+    dependencies: [fastdds],
+    install: true,
+)
 
 test('basic', exe)
