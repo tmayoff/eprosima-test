@@ -5,7 +5,7 @@ project(
     default_options: ['warning_level=3', 'cpp_std=c++20'],
 )
 
-# add_project_arguments('-DFASTRTPS_DYN_LINK=1', language: 'cpp')
+add_project_arguments('-DFASTRTPS_DYN_LINK=1', language: 'cpp')
 
 test_idl = custom_target(
     'Test.idl',
