@@ -4,7 +4,7 @@
 #include "TestInclude.idl"
 
 struct TEST_STRUCT {
-    MACHINEID id;
+    TestModule::MACHINEID id;
     float test_float;
 };
 
