@@ -3,9 +3,8 @@
 
 #include "TestInclude.idl"
 
-struct TEST_STRUCT {
-    TestModule::MACHINEID id;
-    float test_float;
+struct HelloWorld {
+	TestModule::MACHINEID uuid;
 };
 
 #endif // TEST
