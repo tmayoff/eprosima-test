@@ -1,6 +1,7 @@
-# Setup
+# Setup Steps
 
+## Configure build dir
 `meson setup build`
 
-# Compile
-`meson compile -C build`
+## Test 
+`meson test -C build --print-errorlogs`
